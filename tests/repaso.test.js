@@ -29,7 +29,7 @@ describe('Tests de repaso.', function () {
         });
     });
 
-    xdescribe('Recursion y Stack', function () {
+    describe('Recursion y Stack', function () {
         describe('EJERCICIO B', function () {
             let queue;
 
