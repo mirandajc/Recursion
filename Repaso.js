@@ -16,6 +16,21 @@ const { Queue } = require('./DataStructures.js');
 // Ejemplo de numeros palindromos: 1001, 252, 2001, 2222, 9889.
 
 function isPalindrome(number) {
+    
+    let numReverse = '';
+    if(number % 1 != 0 || number<0){
+        return null;
+    }else{
+    var number1 = number.toString();
+    for(let i=number1.length-1;i>=0; i--){
+        numReverse= numReverse + number1[i];
+    }
+    }
+
+    if(number === Number(numReverse)){
+        return true;
+    }return false;
+    
 }
 
 /*****************************************************************/
